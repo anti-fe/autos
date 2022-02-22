@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест-верстка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="up">
+        <div class="header__container container">
+            <div class="header_logo logo">
+                <a href="/index.html">АВТОСАЛОН</a>
+            </div>
+            <nav class="header__nav nav">
+                <a href="#" class="nav__item">Бестселлеры </a>
+                <a href="#" class="nav__item">Подборки</a>
+                <a href="#" class="nav__item">Авторы</a>
+                <a href="#" class="nav__item">Дайджест</a>
+                <a href="#" class="nav__item">Подписка</a>
+                <a href="#" class="nav__item">Выбор редакции</a>
+            </nav>
+            <a href="#" class="header__auto-drive btn btn-primary">Записаться на тест-драйв</a>
+        </div>
+    </header>
+    <!-- /Шапка сайта -->
+    <div class="links container">
+        <h4>Другие модели:</h4>
+        <a href="Granta.html">Lada Granta</a>
+        <a href="Vesta.html">Lada Vesta</a>
+    </div>
+    <h1 class='title'>Lada Largus</h1>
+
+    <div class="container shadow-lg p-5">
+        <h3 class="fs-3">До появления новой модели осталось: </h3>
+        <div class="timer d-flex">
+          <div class="timer-days timer-num">0 дней</div>
+          <div class="timer-hours timer-num">00:</div>
+          <div class="timer-minutes timer-num">00:</div>
+          <div class="timer-seconds timer-num">00</div>
+        </div>
+      </div>
+
+    <section class="slider shadow-lg">
+        <button class="slider-btn__next slider-btn">-</button>
+
+        <div class="slider-imgs">
+            <img src="img/lada.jpg" alt="" class='slider__img'>
+        </div>
+
+        <button class="slider-btn__prev slider-btn">+</button>
+        <div class="slider-dotes"></div>
+    </section>
+
+    <section class="modal-window">
+        <div class="modal-window__body">
+            <div class="body-header">
+                <div class="body-header__close-modal">
+                    <div class="close-modal__line"></div>
+                    <div class="close-modal__line"></div>
+                </div>
+                <h2 class="body-header__title">Автодрайв</h2>
+            </div>
+            <form class="body-form form">
+                <div class="body-form-inp">
+                    <label for="inp-name" class="body-form-inp__label">ФИО</label>
+                    <input type="text" class="body-form-inp__inp" id="inp-name" placeholder="Введите ФИО" name="fio"
+                        required>
+                </div>
+                <div class="body-form-inp">
+                    <label for="inp-email" class="body-form-inp__label">Почта</label>
+                    <input type="email" class="body-form-inp__inp" id="inp-email" placeholder="Введите почту"
+                        name="email" required>
+                </div>
+                <div class="body-form-inp">
+                    <label for="inp-pass" class="body-form-inp__label">Номер телефона</label>
+                    <input type="tel" class="body-form-inp__inp" id="inp-pass" placeholder="9(___)___-__-__" name="tel"
+                        required>
+
+                    <input type="hidden" name="car" value="Lada Largus" class="body-form-inp__inp hidden-inp">
+                </div>
+                <h5 class="warning">Ошибка валидации</h5>
+                <button type="submit" class="body-form__btn">Записаться</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <script src="js/app.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
